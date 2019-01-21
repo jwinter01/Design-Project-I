@@ -22,7 +22,7 @@ public class ChatFrag extends Fragment {
     // This was auto generated from Android Studio (onCreateView then press enter)
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // View find view by id
-        View view = inflater.inflate(R.layout.frag_camera, container, false);
+        View view = inflater.inflate(R.layout.frag_chat, container, false);
         return view; // Return the view
     }
 }

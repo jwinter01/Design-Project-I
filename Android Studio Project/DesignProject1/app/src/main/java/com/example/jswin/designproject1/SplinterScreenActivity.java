@@ -18,7 +18,8 @@ public class SplinterScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Holds all information about the user (IF NULL, NOT LOGGED IN)
         mAuth = FirebaseAuth.getInstance();
-        mAuth.signOut(); // This will sign the user out right away and force a relog
+        // Note for later -> Read below if having issues with logging out
+        //mAuth.signOut(); // This will sign the user out right away and force a relog
         if(mAuth.getCurrentUser() != null){
             Intent intent = new Intent(getApplication(), MainActivity.class);
             // FOR SOME REASON THE USER STAYS LOGGED IN
